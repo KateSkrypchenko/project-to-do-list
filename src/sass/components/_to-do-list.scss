@@ -1,0 +1,36 @@
+.to-do-box {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+// .to-do-list {
+// }
+
+.to-do-list__item {
+  display: flex;
+  justify-content: space-between;
+  border: black 1px solid;
+  padding: 10px;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.to-do-list-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.to-do-list__btn {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+  &:hover,
+  &:focus {
+    background-color: #739598;
+  }
+}

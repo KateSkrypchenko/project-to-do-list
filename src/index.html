@@ -1,14 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <header></header>
+
+    <main>
+      <div class="form-box">
+        <h1 class="form-box__title">My to-do list</h1>
+        <form class="form">
+          <label class="form__label" for="task">
+            <!-- <span>Add to-do</span> -->
+            <input class="form__input" type="text" name="task" placeholder="Add to-do" />
+          </label>
+          <button class="form__btn" type="submit">Create</button>
+        </form>
+      </div>
+
+      <div class="to-do-box">
+        <ul class="to-do-list">
+          <li class="to-do-list__item">
+            <div class="to-do-list-wrap">
+              <input class="to-do-list__input" type="checkbox" name="checked" />
+              <p class="to-do-list__text">Lorem, ipsum dolor.</p>
+            </div>
+            <button class="to-do-list__btn" type="button">X</button>
+          </li>
+          <li class="to-do-list__item">
+            <div class="to-do-list-wrap">
+              <input class="to-do-list__input" type="checkbox" name="checked" />
+              <p class="to-do-list__text">Lorem, ipsum dolor.</p>
+            </div>
+            <button class="to-do-list__btn" type="button">X</button>
+          </li>
+          <li class="to-do-list__item">
+            <div class="to-do-list-wrap">
+              <input class="to-do-list__input" type="checkbox" name="checked" />
+              <p class="to-do-list__text">Lorem, ipsum dolor.</p>
+            </div>
+            <button class="to-do-list__btn" type="button">X</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

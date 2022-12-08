@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/mixin';
+// @import "./utils/placeholder";
+
+@import './base/normalize';
+@import './base/reset';
+
+@import './components/form';
+@import './components/to-do-list';
